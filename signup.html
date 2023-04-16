@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            body{
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgb(31, 31, 31) 15%,rgb(1, 1, 8) 75%,black 10%, rgb(32, 31, 31) 100%);
+            }
+            #body{
+                background:rgb(32, 31, 31);
+                color:white;
+                width:270px;
+                margin:100px 200px 15px 480px; 
+                padding: 10px 0px 10px 100px;
+                font-size:1rem;
+            }
+            input{
+                width:200px;
+                height:30px;
+                font-size:1rem;
+            } 
+            input{
+                outline: none;
+                overflow: visible;
+            }
+            .button {
+            border-radius: 4px;
+            background-color:white;
+            border: none;
+            color:rgb(19, 18, 18);
+            text-align: center;
+            font-size:19px;
+            padding: 5px;
+            width: 120px;
+            height: 30px;;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+        .button:hover{
+            box-shadow: 1px 3px 5px gray;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+        .rem{
+            font-size: 11px;
+            padding:-5x 0 10px 0;
+        }
+        .rem input{
+            width:20px;
+            height:12px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="body">
+            <h2>Sign Up</h2>
+            <form>
+                <form action="/action.php">
+                <div id="name">
+                    <label for="name"><b>Name</b><br></label>
+                    <input type="text" placeholder="Full name"></div>
+                
+                <div id="Gmail"><p><b>Email </b><br><input type="email" placeholder="saxena123@gmail.com"></p></div>
+
+                <div><p><b>Create Password </b><br><input type="text" placeholder="Enter Password"></p></div>
+                <div><p><b>Conform Password </b><br><input type="text" placeholder="Re-enter Password"></p></div>
+                
+                    <div class="log">
+                        <a class="button" href="login.html"> <span>Submit</span> </a>    
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

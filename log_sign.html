@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home_page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica;
+        }
+        .nav-list{
+            background-image:linear-gradient(rgba(4, 7, 30, 0.7),rgba(4, 7, 30, 0.7)),url(images/background1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height:568px;
+        }
+        nav {
+            align-items: center;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 0 1px 8px #ddd;
+            display: flex;
+            justify-content:end;
+        }
+        .guest a{
+            color:white;
+            text-decoration: none;
+        }
+        .guest{
+            margin:10px 0 0 850px;
+        }
+        .guest a:hover{
+            color:whitesmoke;
+        }
+        .logo, .navigation-bar {
+            list-style: none;
+            text-transform: uppercase;
+        }
+        .logo a, .navigation-bar a {
+            text-decoration: none;
+            letter-spacing: .25rem;
+        }
+        .navigation-bar li {
+            list-style: none;
+        }
+        .navigation-bar a {
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease 0s;
+            box-sizing: border-box;
+        }
+        ul li a{
+            transition: 0.6s ease;
+        }
+        ul li a:hover{
+            color:white;
+            box-sizing:border-box;
+            border-bottom:2px solid white;
+        }
+        .logo a{
+            color:rgb(228, 32, 32);
+        }
+        .font{
+            padding:160px 0px 0px 170px;
+            color:rgb(255, 255, 4);
+            letter-spacing: .15rem;
+        }
+        .heading3{
+            font-weight: lighter;
+        }
+        .heading1{
+            font-size:50px;
+            width:300px;
+            height:110px;
+        }
+
+        .submit{
+            margin:30px 0px 0px 0px ;
+            display:flex;
+            gap:25px;
+        }
+        .button {
+            border-radius: 4px;
+            background-color: #f4511e;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size:19px;
+            padding: 10px;
+            width: 120px;
+            height: 40px;;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header" id="1sthomepage">
+        
+        <div class="nav-list">
+            <nav>
+                <h1><span class="logo"><a href="">EDUCATION</a></span></h1>
+                <div class="navigation-bar">
+                    <ul>
+                        <li class="guest"><a href="Home.html">As a guest</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="font">
+                <h3 class="heading3">SMALL CLASS SIZES</h3>
+                <h1 class="heading1">EDUCATION SOLUTIONS</h1>
+                
+                <div class="submit">
+                    <div class="login"><a href="login.html"> <button class="button" type="submit"><span>Login</span></button> </a></div>
+                    <div class="signup"><a href="signup.html"> <button class="button" type="submit"><span>Sign Up</span></button> </a></div>
+                </div>
+            </div>
+
+    </div>
+
+</body>
+</html>

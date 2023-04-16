@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+
+		html{
+			scroll-behavior: smooth;
+		}
+
+		.header{
+			background-image:linear-gradient(rgba(4, 7, 30, 0.7),rgba(4, 7, 30, 0.7)),url(//images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/dec5bc584805560ea93e004f/pexels-photo-5212340.jpeg);
+			height: 100vh;
+			width:1226px;
+			background-position: center;
+			background-size: cover;
+
+		}
+		.header img{
+			width: 130px;
+		}
+		nav{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 2% 5%;
+		}
+
+		.nav-list{
+			flex: 1;
+			text-align: right;
+
+		}
+		nav ul li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 12px;
+
+		}
+		.home a{
+			color:white;
+			box-sizing:border-box;
+			border-bottom:2px solid white;
+		}
+		ul li a{
+			text-decoration: none;
+			font-size: 17px;
+			color: #fff;
+		}
+		ul li a:hover{
+			border-bottom: 2px solid white;
+		}
+		.content{
+			width: 90%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center;
+			color:#fff;
+
+		}
+		.content h1
+		{
+			font-size: 62px;
+			
+		}
+		.content p{
+			margin: 20px 0 40px;
+			font-size: 18px;
+		}
+		.hero-btn{
+			display: inline-block;
+			text-decoration: none;
+			padding: 14px 34px;
+			background: trasparent;
+			color: #fff;
+			position: relative;
+			border: 1px solid #fff;
+		}
+		.hero-btn:hover{
+			border: 1px solid #f44336;
+			background: #f44336;
+			transition: 1s;
+		}
+
+
+
+		.cta{
+			margin: 100px auto;
+			background-position: center;
+			background-size: cover;
+			width: 80%;
+			height: 50vh;
+			background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/banner2.jpg);
+			text-align: center;
+			padding: 100px 0;
+
+		}
+		.cta h1{
+			color: #fff;
+			margin-bottom: 40px;
+			padding: 0;
+		}
+
+
+
+		@media(max-width:700px){
+			.nav-list{
+				display: none;
+			}
+			nav img{
+				width: 140px;
+				margin: auto;
+			}
+			.content h1{
+				font-size:48px;
+
+			}
+			.content p{
+				font-size: 10px;
+			}
+			.row{
+				flex-direction: column;
+			}
+			.course h1{
+				font-size: 28px;
+			}
+			.course p{
+				font-size: 12px;
+			}
+			.course-col{
+				margin-bottom: 20px;
+			}
+			.campus h1{
+				font-size: 20px;
+			}
+			.campus p{
+				font-size: 12px;
+			}
+			.facilities-col{
+				margin-bottom: 20px;
+				margin-top: 20px;
+			}
+			.cta h1{
+				padding: 20px 20px;
+				line-height: 1;
+				font-size: 20px;
+
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<section class="header" id="home">
+		<nav>
+			<img src="images/logo.png">
+			<div class="nav-list">
+				<ul>
+					<li class="home"><a href="Home.html">HOME</a></li>
+					<li><a href="#about">ABOUT US</a></li>
+					<li><a href="studypg.html">COURSES</a></li>
+					<li><a href="Blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT US</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="content">
+			<h1>Welcome to the <br>School of Education</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			.</p>
+			<a href="#header" class="hero-btn">Click-Here</a>
+		</div>
+	</section>
+	
+	
+	
+	<section class="cta">
+		<h1>Enroll for Our various online courses<br> Anywhere from the World</h1>
+		<a href="#" class="hero-btn">Enroll now</a>
+	</section>
+	
+</div>
+</body>
+</html>
